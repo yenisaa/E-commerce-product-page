@@ -71,4 +71,4 @@ see below:
 
 - Website - [Isaiah Yenou Ayomide](https://github.com/yenisaa)
 - Frontend Mentor - [@yenisa](https://www.frontendmentor.io/profile/yenisaa)
-- Twitter - [@isaiahyenou](https://www.twitter.com/isaiahyenou )
+- Twitter - [@isaiahyenou](https://www.twitter.com/isaiahyenou)

@@ -4,13 +4,7 @@
 /* Typography  */
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
 
-/* Styles Begins Here  */
-
-body {
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-}
+/* Utility  */
 
 :root {
   /* Colors Palette  */
@@ -25,9 +19,23 @@ body {
   --black: hsl(0, 0%, 0%, 75%);
 }
 
+/* Styles Begins Here  */
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 1440px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 header {
   border: 2px sold var(--dark-blue);
-  margin: auto;
+  margin-bottom: 30px;
   width: 80%;
 }
 
@@ -35,15 +43,36 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
   gap: 10px;
-  margin: 0  0 80px 0;
+  margin-bottom: 10px;
   border-bottom: 1px solid var(--Grayish-blue);
   padding-bottom: 20px;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
+  justify-content: center;
+  align-content: start;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.burger-menu-container {
+  display: none;
 }
 
 ul {
@@ -56,6 +85,11 @@ ul {
     a {
       color: var(--grayish-blue-dark);
       text-decoration: none;
+    }
+    a:hover {
+      color: var(--dark-blue);
+      border-bottom: 4px solid var(--Orange);
+      padding-bottom: 43px;
     }
   }
 }
@@ -73,6 +107,10 @@ p {
   gap: 30px;
 }
 
+.cart-icon-container > img:hover {
+  filter: sepia(60%);
+}
+
 .profile {
   width: 45px;
 }
@@ -80,30 +118,15 @@ p {
 /* container styles */
 
 .container {
-  max-width: 1440px;
-}
-
-main {
-  width: 92vw;
-  height: 100vh;
-}
-
-#hero {
+  max-width: 90%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 100px;
-  width: 100%;
 }
 
 .product-image {
   display: flex;
   flex-direction: column;
-  max-width: 450px;
-}
-
-.main-image {
-  width: 100%;
+  gap: 10px;
+  max-width: 400px;
 }
 
 .main-image {
@@ -113,13 +136,19 @@ main {
 
 .featured-images {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   margin: 10px 0;
 
   & img {
-    border-radius: 15px;
+    border-radius: 10px;
     width: 100%;
   }
+}
+
+.item a:focus {
+  border-radius: 10px;
+  outline: 2px solid var(--Orange);
+  filter: opacity(50%);
 }
 
 /* Second Div  */
@@ -198,17 +227,111 @@ button {
 
   .btn-cart {
     width: 15px;
-    filter: contrast(7.5);
+    filter: contrast(80);
   }
+}
+button:hover {
+  background: var(--Orange);
+  transition: 0.2s ease-in;
+  filter: opacity(80%);
 }
 
-@media screen and (max-width: 1280px) {
-  .container {
-    max-width: 1000px;
-  }
+footer {
+  margin: 30px auto;
+  text-align: center;
 }
-@media screen and (max-width: 320px) {
+
+/* RESPONSIVENESS  */
+
+/* Mobile */
+
+@media (min-width: 320px) and (max-width: 475px) {
   .container {
-    max-width: 320px;
+    max-width: 90%;
+  }
+  #hero {
+    display: block;
+  }
+
+  main {
+    gap: 0;
+  }
+
+  header {
+    margin-bottom: 0;
+  }
+
+  nav {
+    margin: 0;
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .nav-menu ul {
+    display: none;
+  }
+
+  .logo-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  #main-image img {
+    width: 405px;
+    margin: 0 -1rem;
+    border-radius: 0;
+  }
+
+  .featured-images .item {
+    display: none;
+  }
+
+  .burger-menu-container {
+    display: inline-block;
+  }
+  #hero,
+  #product-content {
+    width: 100%;
+  }
+
+  .product-description {
+    max-width: 100%;
+  }
+
+  .price-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .original-price {
+    margin: 0;
+  }
+
+  .price h2 {
+    font-size: xx-large;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
+  }
+
+  .amount {
+    width: 90%;
+    height: 60px;
+  }
+
+  #add-to-cart{
+    width: 100%;
+  }
+
+  button {
+    width: inherit;
+    height: 60px;
   }
 }
