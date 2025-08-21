@@ -39,7 +39,7 @@ header {
   width: 80%;
 }
 
-#side-nav{
+#side-nav {
   display: none;
 }
 
@@ -82,7 +82,6 @@ main {
 ul {
   display: flex;
   gap: 30px;
-  
 
   li {
     list-style: none;
@@ -179,6 +178,10 @@ a:focus {
   width: 100%;
   border-radius: 15px;
 }
+
+ #main-image > span{
+  display: none;
+ }
 
 h2 {
   font-size: xx-large;
@@ -327,11 +330,11 @@ footer {
     display: none;
   }
 
-  #close{
+  #close {
     margin-top: 30px;
-      }
+  }
 
-  #close-icon{
+  #close-icon {
     width: 20px;
   }
 
@@ -360,7 +363,7 @@ footer {
     justify-content: start;
     color: var(--dark-blue);
   }
-  #side-nav ul li a h3{
+  #side-nav ul li a h3 {
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -384,26 +387,44 @@ footer {
     width: 100%;
   }
 
-  .gallery{
+  #main-image {
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .gallery-nav{
-    background: var(--Orange);
-    border-radius: 100px;
-    width: 50px;
-    height: 50px;
-    align-self: center;
     justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
+  #main-image > img.main-image {
+    width: inherit;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
 
-  #main-image img {
-    width: 405px;
-    margin: 0 -1rem;
-    border-radius: 0;
+  #main-image > span {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  #main-image > .prev {
+    left: 10px;
+  }
+
+  #main-image > .next {
+    right: 10px;
+  }
+
+  #main-image span img {
+    width: 15px;
+    height: 15px;
   }
 
   .featured-images .item {
