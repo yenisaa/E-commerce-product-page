@@ -1,6 +1,9 @@
-# Frontend Mentor - E-commerce product page solution
+# E-commerce Product Page (Frontend Mentor Challenge)
+
 
 This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+At this stage, the project includes only the HTML and CSS implementation. I’ll be adding TypeScript soon to handle the interactive parts (gallery, lightbox, cart, etc.).
 
 ## Table of contents
 
@@ -18,27 +21,27 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 ## Overview
 
-This is E-Commerce product page challenges you in not only the html and css part but also the javaScript part too.
+This E-commerce Product Page challenge tests not only your HTML and CSS skills but also JavaScript/TypeScript for interactivity.
 
 ### The challenge
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Open a lightbox gallery by clicking on the large product image
-- Switch the large product image by clicking on the small thumbnail images
+- View the optimal layout depending on their device’s screen size
+- See hover states for all interactive elements
+- Open a lightbox gallery by clicking the large product image
+- Switch the main product image via thumbnails
 - Add items to the cart
 - View the cart and remove items from it
 
 ### Screenshot
 
-![](./assets/images/screenshot.png)
+![Screenshot](./assets/images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Check out the code on github](https://github.com/yenisaa/E-commerce-product-page)
+- Live Site URL: [Check out the live website](https://ecomm-prod-page.netlify.app/)
 
 ## My process
 
@@ -46,17 +49,13 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Flexbox & media queries
 - Mobile-first workflow
-- TypeScript
+- (TypeScript in progress)
 
 ### What I learned
 
 see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 
 ```css
 .proud-of-this-css {
@@ -66,9 +65,27 @@ see below:
 
 ### Continued development
 
+- Improve accessibility (focus states, aria labels)
+- Add interactivity with TypeScript
+
+### Features (Current Stage)
+
+- Responsive layout for desktop and mobile
+- Hover & focus states for interactive elements
+- Base structure for gallery and cart dropdown
+
+### Next Steps
+
+- Add TypeScript for:
+- Image gallery navigation
+- Lightbox modal
+- Cart functionality (add, remove, update quantities)
+- Mobile navigation toggle
 
 ## Author
 
 - Website - [Isaiah Yenou Ayomide](https://github.com/yenisaa)
-- Frontend Mentor - [@yenisa](https://www.frontendmentor.io/profile/yenisaa)
-- Twitter - [@isaiahyenou](https://www.twitter.com/isaiahyenou)
+- Frontend Mentor - [@yenisaa](https://www.frontendmentor.io/profile/yenisaa)
+- Twitter - [@isaiahyenou](https://x.com/isaiahyenou)
+
+*Built with ❤️ by Isaiah Yenou Ayomide*
