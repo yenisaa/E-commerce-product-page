@@ -73,6 +73,7 @@ see below:
 - Responsive layout for desktop and mobile
 - Hover & focus states for interactive elements
 - Base structure for gallery and cart dropdown
+- Mobile navigation toggle
 
 ### Next Steps
 
@@ -80,7 +81,6 @@ see below:
 - Image gallery navigation
 - Lightbox modal
 - Cart functionality (add, remove, update quantities)
-- Mobile navigation toggle
 
 ## Author
 

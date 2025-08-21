@@ -10,106 +10,108 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
 
     <title>Frontend Mentor | E-commerce product page</title>
 
-    <script src="./src/dist/script.js" defer></script>
+    <script src="./src/script/script.js" defer></script>
   </head>
   <body>
-    <header class="container"> 
-        <nav>
-          <div class="nav-menu">
-            <div class="logo-container">
-              <div class="burger-menu-container">
-                  <img src="./assets/images/icon-menu.svg" alt="burger burger-menu">
-                </div>
-              <div id="logo">
-                <h1 class="logo"><img src="./assets/images/logo.svg" alt=""></h1>
-              </div>
-              <div id="side-menu">
-                <nav id="side-nav">
-                <div id="close">
-                  <img src="./assets/images/icon-close.svg" alt="close icon" id="close-icon">
-                </div>
-            <ul>
-              <li>
-                <a href="#"><h3>Collections</h3></a>
-              </li>
-              <li>
-                <a href="#"><h3>Men</h3></a>
-              </li>
-              <li>
-                <a href="#"><h3>Women</h3></a>
-              </li>
-              <li>
-                <a href="#"><h3>About</h3></a>
-              </li>
-              <li>
-                <a href="#"><h3>Contact</h3></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-            </div>
-            <ul>
-              <li>
-                <a href="#">Collections</a>
-              </li>
-              <li>
-                <a href="#">Men</a>
-              </li>
-              <li>
-                <a href="#">Women</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="profile-cart">
-            <div class="cart-icon-container">
-              <a href="#!"><img id="cart-icon" src="./assets/images/icon-cart.svg" alt="cart icon" /></a>
-            </div>
-            <div class="profile-icon">
+    <header class="container">
+      <nav>
+        <div class="nav-menu">
+          <div class="logo-container">
+            <div class="burger-menu-container">
               <img
-                src="./assets/images/image-avatar.png"
-                alt="profile icon"
-                class="profile"
+                src="./assets/images/icon-menu.svg"
+                alt="burger menu"
+                id="burger-menu"
               />
             </div>
+            <div id="logo">
+              <h1 class="logo">
+                <img src="./assets/images/logo.svg" alt="logo" />
+              </h1>
+            </div>
+
+            <!-- ✅ Cleaned Side Nav -->
+            <nav id="side-nav">
+              <div id="close">
+                <img
+                  src="./assets/images/icon-close.svg"
+                  alt="close icon"
+                  id="close-icon"
+                />
+              </div>
+              <ul>
+                <li><a href="#"><h3>Collections</h3></a></li>
+                <li><a href="#"><h3>Men</h3></a></li>
+                <li><a href="#"><h3>Women</h3></a></li>
+                <li><a href="#"><h3>About</h3></a></li>
+                <li><a href="#"><h3>Contact</h3></a></li>
+              </ul>
+            </nav>
           </div>
-        </nav>
-      </header>
-      <main class="container">
-        <div class="cart-active">
-          <div class="cart-title">
-            <h3>Cart</h3>
+          <ul>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="profile-cart">
+          <div class="cart-icon-container">
+            <a href="#!"
+              ><img
+                id="cart-icon"
+                src="./assets/images/icon-cart.svg"
+                alt="cart icon"
+            /></a>
           </div>
-          <div class="cart-content">
-            <h3>Your cart is empty</h3>
+          <div class="profile-icon">
+            <img
+              src="./assets/images/image-avatar.png"
+              alt="profile icon"
+              class="profile"
+            />
           </div>
         </div>
-        
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="cart-active">
+        <div class="cart-title">
+          <h3>Cart</h3>
+        </div>
+        <div class="cart-content">
+          <h3>Your cart is empty</h3>
+        </div>
+      </div>
+
       <section id="hero">
         <div class="product-image">
           <div id="main-image">
             <span class="prev">
-              <img src="./assets/images/icon-previous.svg" alt="previous icon">
-            </span>
               <img
-                src="./assets/images/image-product-1.jpg"
-                alt="product image 1"
-                class="main-image"
+                src="./assets/images/icon-previous.svg"
+                alt="previous icon"
               />
-              <span class="next">
-                <img src="./assets/images/icon-next.svg" alt="next icon">
-              </span>
+            </span>
+            <img
+              src="./assets/images/image-product-1.jpg"
+              alt="product image 1"
+              class="main-image"
+            />
+            <span class="next">
+              <img src="./assets/images/icon-next.svg" alt="next icon" />
+            </span>
           </div>
           <div class="featured-images">
-            
             <div class="featured-image-1 item">
               <a href="#!">
                 <img
@@ -144,8 +146,8 @@
             </div>
           </div>
         </div>
-        </div>
       </section>
+
       <section id="product-content">
         <div class="product-description">
           <div class="product-headers">
@@ -154,10 +156,9 @@
           </div>
           <div class="product-info">
             <p>
-              Collections Men Women About Contact Sneaker Company These
-              low-profile sneakers are your perfect casual wear companion.
-              Featuring a durable rubber outer sole, they’ll withstand
-              everything the weather can offer.
+              These low-profile sneakers are your perfect casual wear
+              companion. Featuring a durable rubber outer sole, they’ll
+              withstand everything the weather can offer.
             </p>
           </div>
           <div class="price-tag">
@@ -174,7 +175,12 @@
               <span id="amount-minus"
                 ><img src="./assets/images/icon-minus.svg" alt="minus icon"
               /></span>
-              <input type="number" name="amount" id="amount" placeholder="0">
+              <input
+                type="number"
+                name="amount"
+                id="amount"
+                placeholder="0"
+              />
               <span id="amount-plus"
                 ><img src="./assets/images/icon-plus.svg" alt="plus icon"
               /></span>
@@ -182,22 +188,28 @@
             <div id="add-to-cart">
               <button>
                 <span>
-                  <img src="./assets/images/icon-cart.svg" alt="Cart Icon" class="btn-cart"/>
+                  <img
+                    src="./assets/images/icon-cart.svg"
+                    alt="Cart Icon"
+                    class="btn-cart"
+                  />
                 </span>
                 Add to cart
               </button>
             </div>
           </div>
+        </div>
       </section>
     </main>
 
     <footer class="container">
-        <p>
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="https://github.com/yenisaa">Yenisa</a>.
-        </p>
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/yenisaa">Yenisa</a>.
+      </p>
     </footer>
   </body>
 </html>

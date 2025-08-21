@@ -1,6 +1,4 @@
-/* CSS RESET  */
-@import "~normalize.css";
-
+/* CSS R
 /* Typography  */
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
 
@@ -33,15 +31,17 @@ body {
   align-items: center;
 }
 
+body.lock-scroll{
+  overflow: hidden;
+}
+
 header {
   border: 2px sold var(--dark-blue);
   margin-bottom: 30px;
   width: 80%;
 }
 
-#side-nav {
-  display: none;
-}
+
 
 nav {
   display: flex;
@@ -302,7 +302,7 @@ footer {
 
 /* Mobile */
 
-@media (min-width: 320px) and (max-width: 475px) {
+@media (min-width: 320px) and (max-width: 500px) {
   .container {
     max-width: 90%;
   }
@@ -327,11 +327,10 @@ footer {
   #side-menu {
     width: inherit;
     transition: 1s step-start;
-    display: none;
   }
 
   #close {
-    margin-top: 30px;
+    margin: 30px 40px;
   }
 
   #close-icon {
@@ -340,22 +339,24 @@ footer {
 
   #side-nav {
     background: var(--white);
-    height: 150vh;
-    width: 75%;
+    height: 105vh;
+    width: 65%;
     position: absolute;
     top: 0;
-    left: -50px;
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
+    left: -100%;
+    z-index: 1;
     align-content: flex-start;
-    justify-content: flex-start;
-    gap: 10px;
     box-shadow: 1px 1px 3000px rgb(0, 0, 0);
-    transition: 2s ease-in-out;
+    
+    transition: left 0.3s ease-in-out;
     display: none;
   }
 
+  #side-nav.show {
+  left: -50px; 
+  display: block;
+}
+ 
   #side-nav ul {
     display: flex;
     flex-direction: column;
@@ -477,4 +478,13 @@ footer {
     width: inherit;
     height: 60px;
   }
+}
+
+@media (min-width: 500px) {
+  #side-menu {
+    display: none !important; /* force hidden */
+  }
+  #side-nav {
+  display: none !important;
+}
 }
